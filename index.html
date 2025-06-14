@@ -1,12 +1,56 @@
-<h1>Name</h1>
-<h2>Body</h2>
-<h1>Name</h1>
-<h2>Body</h2>
-<h1>Name</h1>
-<h2>Body</h2>
-<h1>Name</h1>
-<h2>Body</h2>
-<h1>Name</h1>
-<h2>Body</h2>
-<h1>Name</h1>
-<h2>Body</h2>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>ExpressVykup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+  <header class="top-bar">
+    <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" class="logo" alt="Лого" />
+    <h1 id="title">ExpressVykup</h1>
+    <div class="controls">
+      <select id="lang">
+        <option value="ua">UA</option>
+        <option value="en">EN</option>
+      </select>
+      <select id="currency">
+        <option value="uah">UAH</option>
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+      </select>
+      <button id="theme-btn">🌙 / ☀️</button>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <input list="brands" id="brand-input" placeholder="Марка авто" />
+    <datalist id="brands">
+      <option value="Toyota">
+      <option value="BMW">
+      <option value="Ford">
+    </datalist>
+
+    <input list="models" id="model-input" placeholder="Модель авто" />
+    <datalist id="models">
+      <option value="Camry">
+      <option value="X5">
+      <option value="Focus">
+    </datalist>
+
+    <input list="years" id="year-input" type="number" placeholder="Рік авто" />
+    <datalist id="years">
+      <option value="2020">
+      <option value="2019">
+      <option value="2018">
+    </datalist>
+
+    <button onclick="addCar()">Додати авто</button>
+  </section>
+
+  <section id="car-list" class="car-list"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
