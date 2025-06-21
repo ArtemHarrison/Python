@@ -13,8 +13,8 @@
     </div>
     <h1 class="logo">DriveUA</h1>
     <div class="nav-right">
-      <button class="tab-btn active" data-tab="home">Головна</button>
-      <button class="tab-btn" data-tab="select">Каталог</button>
+      <a href="#home" class="tab-link active" data-tab="home">Головна</a>
+      <a href="#catalog" class="tab-link" data-tab="select">Каталог</a>
     </div>
   </header>
 
@@ -31,15 +31,36 @@
     </div>
   </div>
 
-  <div id="select" class="tab-content">
+  <main id="home" class="tab-content active">
+    <div class="welcome-section">
+      <div class="text-left">
+        <p>Вітаємо на сайті <strong>DriveUA</strong>!<br />
+        У нас ви зможете безпечно купити та продати авто всього в пару кліків.</p>
+        <ul>
+          <li>Продаж авто за 15 хвилин в межах Києва</li>
+          <li>Продаж підтриманих авто по Україні за низькими цінами</li>
+        </ul>
+      </div>
+      <div class="image-right">
+        <img src="https://kartochki-domana.com.ua/wp-content/uploads/2017/07/Nabor-kartochek-1-marki-avto-ukrain.jpg" alt="Авто" />
+      </div>
+    </div>
+    <div class="socials">
+      <img src="/icons/instagram.png" alt="Instagram" />
+      <img src="/icons/facebook.png" alt="Facebook" />
+      <img src="/icons/tiktok.png" alt="TikTok" />
+    </div>
+  </main>
+
+  <section id="catalog" class="tab-content">
     <h2>Оберіть тип авто:</h2>
     <div class="buttons">
-      <button onclick="selectCarType('sedan')">Седан</button>
-      <button onclick="selectCarType('suv')">Позашляховик</button>
-      <button onclick="selectCarType('hatchback')">Хетчбек</button>
+      <a href="#" onclick="selectCarType('sedan')">Седан</a>
+      <a href="#" onclick="selectCarType('suv')">Позашляховик</a>
+      <a href="#" onclick="selectCarType('hatchback')">Хетчбек</a>
     </div>
     <div id="car-gallery" class="gallery"></div>
-  </div>
+  </section>
 
   <footer class="footer">
     <div class="contact">+380 00 000 00 00<br />вул. Пушкіна 7</div>
