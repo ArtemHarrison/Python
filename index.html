@@ -2,54 +2,48 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <title>ExpressVykup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriveUA</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="light">
-
-  <header class="top-bar">
-    <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" class="logo" alt="Лого" />
-    <h1 id="title">ExpressVykup</h1>
-    <div class="controls">
-      <select id="lang">
-        <option value="ua">UA</option>
-        <option value="en">EN</option>
-      </select>
-      <select id="currency">
-        <option value="uah">UAH</option>
-        <option value="usd">USD</option>
-        <option value="eur">EUR</option>
-      </select>
-      <button id="theme-btn">🌙 / ☀️</button>
+<body>
+  <header class="header">
+    <div class="logo-left">
+      <img src="https://cdn.discordapp.com/attachments/1378681218622816258/1380963572049379390/image.png?ex=6857964c&is=685644cc&hm=19a63ac18de6619009146f250e456069fc6fb04f4e906c08fa963ea32c7cefea&" alt="Logo" class="logo-img" />
+    </div>
+    <h1 class="logo">DriveUA</h1>
+    <div class="nav-right">
+      <button class="tab-btn active" data-tab="home">Головна</button>
+      <button class="tab-btn" data-tab="select">Каталог</button>
     </div>
   </header>
 
-  <section class="form-section">
-    <input list="brands" id="brand-input" placeholder="Марка авто" />
-    <datalist id="brands">
-      <option value="Toyota">
-      <option value="BMW">
-      <option value="Ford">
-    </datalist>
+  <div id="home" class="tab-content active">
+    <p>Вітаємо на сайті DriveUA. У нас ви зможете безпечно купити та продати авто всього в пару кліків.</p>
+    <ul>
+      <li>Продаж авто за 15 хвилин в межах Києва</li>
+      <li>Продаж підтриманих авто по Україні за низькими цінами</li>
+    </ul>
+    <div class="socials">
+      <img src="/icons/instagram.png" alt="Instagram" />
+      <img src="/icons/facebook.png" alt="Facebook" />
+      <img src="/icons/tiktok.png" alt="TikTok" />
+    </div>
+  </div>
 
-    <input list="models" id="model-input" placeholder="Модель авто" />
-    <datalist id="models">
-      <option value="Camry">
-      <option value="X5">
-      <option value="Focus">
-    </datalist>
+  <div id="select" class="tab-content">
+    <h2>Оберіть тип авто:</h2>
+    <div class="buttons">
+      <button onclick="selectCarType('sedan')">Седан</button>
+      <button onclick="selectCarType('suv')">Позашляховик</button>
+      <button onclick="selectCarType('hatchback')">Хетчбек</button>
+    </div>
+    <div id="car-gallery" class="gallery"></div>
+  </div>
 
-    <input list="years" id="year-input" type="number" placeholder="Рік авто" />
-    <datalist id="years">
-      <option value="2020">
-      <option value="2019">
-      <option value="2018">
-    </datalist>
-
-    <button onclick="addCar()">Додати авто</button>
-  </section>
-
-  <section id="car-list" class="car-list"></section>
+  <footer class="footer">
+    <div class="contact">+380 00 000 00 00<br />вул. Пушкіна 7</div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

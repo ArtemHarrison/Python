@@ -1,91 +1,111 @@
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 0;
+  background: #000;
+  color: #fff;
 }
 
-body.light {
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-body.dark {
-  background-color: #1c2833;
-  color: white;
-}
-
-.top-bar {
+header.header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #111;
-  padding: 15px;
+  justify-content: space-between;
+  background: #000000;
+  padding: 10px 40px;
   position: relative;
-  color: white;
+}
+
+.logo-left {
+  flex: 1;
+}
+
+.logo-img {
+  height: 50px;
 }
 
 .logo {
   position: absolute;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-}
-
-#title {
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
   margin: 0;
-  font-size: 24px;
 }
 
-.controls {
-  position: absolute;
-  right: 15px;
+.nav-right {
   display: flex;
   gap: 10px;
 }
 
-.form-section {
-  text-align: center;
-  padding: 20px;
-}
-
-.form-section input {
-  padding: 10px;
-  margin: 5px;
-  width: 200px;
-}
-
-.form-section button {
-  padding: 10px 15px;
-  margin-top: 10px;
-  background-color: #16a085;
-  color: white;
+.tab-btn {
+  padding: 10px 20px;
   border: none;
+  background: #4c4c4c;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.tab-btn.active {
+  background: #fff;
+  color: #000000;
+}
+
+.tab-content {
+  display: none;
+  padding: 40px 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer {
+  text-align: centerw;
+  background: #111;
+  padding: 50px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.buttons button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #ccc;
+  color: #000000;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-.car-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 
-.car-card {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background-color 0.3s;
-}
-
-body.dark .car-card {
-  background-color: #34495e;
-}
-
-.car-card img {
+.gallery img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
