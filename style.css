@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+a{
+  text-decoration: none;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Merriweather", serif;
   margin: 0;
   padding: 0;
   background: #2d6d62;
@@ -46,6 +52,12 @@ header.header {
   cursor: pointer;
   border-radius: 6px;
   font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tab-btn:hover{
+  box-shadow: 0px 0px 10px 2px white;
 }
 
 .tab-btn.active {
@@ -73,21 +85,15 @@ ul {
 }
 
 .socials img {
-  width: 60px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   margin-right: 10px;
 }
 
 .footer {
-<<<<<<< HEAD
-  text-align: centerw;
-  background: #5f5f5f;
-  padding: 50px 0px;
-=======
   text-align: center;
   background: #111;
   padding: 10px 40px;
->>>>>>> 28eb5795b4a9092f991ff52fbab969c9680d25e1
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -116,11 +122,9 @@ ul {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-<<<<<<< HEAD
-.tab-content  {
+.tab-content {
   text-align: center;
 }
-
 
 .kuprod {
   padding: 10px 20px;
@@ -128,14 +132,26 @@ ul {
   background: #000000;
   color: #fff;
   cursor: pointer;
-  border-radius: 6px;
   font-weight: bold;
   text-align: center;
-  
-  
 }
 
-=======
+.kuprod button {
+  background-color: white;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid gray;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.kuprod button:hover{
+  transform: scale(1.1) translateY(-3px);
+
+}
+
+
 .tab-link {
   padding: 10px 20px;
   text-decoration: none;
@@ -181,4 +197,3 @@ ul {
   font-weight: bold;
   color: #fff;
 }
->>>>>>> 28eb5795b4a9092f991ff52fbab969c9680d25e1
