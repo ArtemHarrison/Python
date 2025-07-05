@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #000;
-  color: #fff;
+  background: #2d6d62;
+  color: #ffffff;
 }
 
 header.header {
@@ -73,15 +73,21 @@ ul {
 }
 
 .socials img {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 50px;
   margin-right: 10px;
 }
 
 .footer {
+<<<<<<< HEAD
   text-align: centerw;
   background: #5f5f5f;
   padding: 50px 0px;
+=======
+  text-align: center;
+  background: #111;
+  padding: 10px 40px;
+>>>>>>> 28eb5795b4a9092f991ff52fbab969c9680d25e1
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -110,6 +116,7 @@ ul {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< HEAD
 .tab-content  {
   text-align: center;
 }
@@ -128,3 +135,50 @@ ul {
   
 }
 
+=======
+.tab-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  background: #555;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.tab-link.active {
+  background: #fff;
+  color: #000;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px;
+}
+
+.text-left {
+  flex: 1;
+  text-align: left;
+}
+
+.image-right img {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid gold;
+  border-radius: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+>>>>>>> 28eb5795b4a9092f991ff52fbab969c9680d25e1
