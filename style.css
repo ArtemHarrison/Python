@@ -41,7 +41,7 @@ header.header {
 .tab-btn {
   padding: 10px 20px;
   border: none;
-  background: #4c4c4c;
+  background: #000000;
   color: #fff;
   cursor: pointer;
   border-radius: 6px;
@@ -80,7 +80,7 @@ ul {
 
 .footer {
   text-align: centerw;
-  background: #111;
+  background: #5f5f5f;
   padding: 50px 0px;
   font-size: 20px;
   font-weight: bold;
@@ -109,3 +109,22 @@ ul {
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+
+.tab-content  {
+  text-align: center;
+}
+
+
+.kuprod {
+  padding: 10px 20px;
+  border: none;
+  background: #000000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  
+  
+}
+

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DriveUA</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -17,21 +20,21 @@
       <button class="tab-btn" data-tab="select">Каталог</button>
     </div>
   </header>
-
-  <div id="home" class="tab-content active">
-    <p>Вітаємо на сайті DriveUA. У нас ви зможете безпечно купити та продати авто всього в пару кліків.</p>
-    <ul>
-      <li>Продаж авто за 15 хвилин в межах Києва</li>
-      <li>Продаж підтриманих авто по Україні за низькими цінами</li>
-    </ul>
-    <div class="socials">
-      <img src="/icons/instagram.png" alt="Instagram" />
-      <img src="/icons/facebook.png" alt="Facebook" />
-      <img src="/icons/tiktok.png" alt="TikTok" />
-    </div>
+  <div class="kuprod">
+  <button>Продати своє Авто </button>
+  <button>Купити підтримане Авто</button>
   </div>
 
-  <div id="select" class="tab-content">
+  <div id="home" class="tab-content active"> 
+    <p>Вітаємо на сайті DriveUA. У нас ви зможете безпечно купити та продати авто всього в пару кліків.</p>
+    <ul>
+      <p>Продаж авто за 15 хвилин в межах Києва</p>
+      <p>Продаж підтриманих авто по Україні за низькими цінами</p>
+    </ul>
+
+  </div>
+
+  <div id="select" class="tab-content"
     <h2>Оберіть тип авто:</h2>
     <div class="buttons">
       <button onclick="selectCarType('sedan')">Седан</button>
@@ -43,6 +46,11 @@
 
   <footer class="footer">
     <div class="contact">+380 00 000 00 00<br />вул. Пушкіна 7</div>
+        <div class="socials">
+      <img src="/icons/instagram.png" alt="Instagram" />
+      <img src="/icons/facebook.png" alt="Facebook" />
+      <img src="/icons/tiktok.png" alt="TikTok" />
+    </div>
   </footer>
 
   <script src="script.js"></script>
