@@ -1,86 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DriveUA</title>
-  <link rel="stylesheet" href="style2.css" />
-</head>
-<body>
-  <header class="header">
-    <div class="logo-left">
-      <img src="https://media.discordapp.net/attachments/1378681218622816258/1380963572049379390/image.png?ex=686a0b4c&is=6868b9cc&hm=9394a07f6249c6fca28dd59ef4c8f58b74fc528bf060c5ee50609760c7972469&=&format=webp&quality=lossless&width=933&height=241" alt="Logo" class="logo-img" />
-    </div>
-    <h1 class="logo">DriveUA</h1>
-    <div class="nav-right">
-      <a href="index.html" class="tab-btn active" data-tab="home">Головна</a>
-      <a href="index2.html" class="tab-btn" data-tab="select">Каталог</a>
-    </div>
-  </header>
-<div class="cars">
-
-<div>
-
-<img src="https://www.bing.com/images/search?q=bmw+m4&id=FFED6EC5B63607B7D3FE1A4068D1C8515E8ED4A4&FORM=IQFRBA">
-<p>Модель:BMW M4 </p>
-<p>Пробіг:75000 km </p>
-<p>Ціна: 80.000 $ </p>
-
-  </div>
-
-  <div>
-
-<img src="https://img.classistatic.de/api/v1/mo-prod/images/cf/cfa25236-c4f0-4205-b419-65aa1230adfe?rule=mo-640.jpg">
-<p>Модель:Mercedes Maybach </p>
-<p>Пробіг:100000 km </p>
-<p>Ціна: 90.000 $ </p>
-
-  </div>
-   <div>
-
-<img src="https://autopodium.ua/storage/product_images/medium/bBOgNkWAsa1Qw3XaAk7VEnMnFAfOxgZCmFq0D4mE.JPG">
-<p>Модель:Toyota Camry </p>
-<p>Пробіг: 200000km </p>
-<p>Ціна: 20000 $ </p>
-
-  </div>
-</div>
-  <div id="select" class="tab-content">
-    <h2>Оберіть тип авто:</h2>
-    <div class="buttons">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveUA — Каталог авто</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-left">
+        <img src="https://media.discordapp.net/attachments/1378681218622816258/1380963572049379390/image.png?ex=686a0b4c&is=6868b9cc&hm=9394a07f6249c6fca28dd59ef4c8f58b74fc528bf060c5ee50609760c7972469&=&format=webp&quality=lossless&width=933&height=241" alt="DriveUA logo" class="logo-img" />
+      </div>
+      <h1 class="logo-text">DriveUA</h1>
+      <nav class="nav-right">
+        <a href="index.html" class="tab-btn" >Головна</a>
+        <a href="index2.html" class="tab-btn active" >Каталог</a>
+      </nav>
+    </header>
+    <div class="filter" aria-label="Фільтр за типом кузова">
+      <button onclick="selectCarType('all')">Всі</button>
       <button onclick="selectCarType('sedan')">Седан</button>
       <button onclick="selectCarType('suv')">Позашляховик</button>
       <button onclick="selectCarType('hatchback')">Хетчбек</button>
     </div>
-    <div id="car-gallery" class="gallery"></div>
-  </div>
 
-  <footer class="footer">
-    <div class="contact">+380 00 000 00 00<br />вул. Пушкіна 7</div>
-    <div class="socials">
-      <a href="">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png"
-          alt="Instagram"
-        />
-      </a>
-      <a href="">
-        <img
-          src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png"
-          alt="Facebook"
-        />
-      </a>
-      <a href="">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/1200px-Tiktok_icon.svg.png"
-          alt="TikTok"
-        />
-      </a>
-    </div>
-  </footer>
+    <!-- ===== CATALOG ===== -->
+    <section class="cars" id="car-gallery" aria-live="polite"></section>
 
-
-
-</body>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="contact">+380 00 000 00 00<br />вул. Пушкіна 7, Київ</div>
+      <div class="socials">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png" alt="Instagram" /></a>
+        <a href="#"><img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/1200px-Tiktok_icon.svg.png" alt="TikTok" /></a>
+      </div>
+    </footer>
+    <script src="main2.js">
+    </script>
+  </body>
 </html>

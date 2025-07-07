@@ -1,28 +1,54 @@
-document.querySelectorAll('.tab-btn').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const tab = btn.getAttribute('data-tab');
-    document.querySelectorAll('.tab-content').forEach(content => {
-      content.classList.remove('active');
-    });
-    document.getElementById(tab).classList.add('active');
-  });
-});
 
-function selectCarType(type) {
-  const gallery = document.getElementById('car-gallery');
-  const images = {
-    sedan: ['/cars/sedan1.jpg', '/cars/sedan2.jpg'],
-    suv: ['/cars/suv1.jpg', '/cars/suv2.jpg'],
-    hatchback: ['/cars/hatch1.jpg', '/cars/hatch2.jpg']
+  const tabs = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', e => {
+      e.preventDefault();
+      const id = tab.getAttribute('data-tab');
+      // Активна кнопка
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      // Активний контент
+      contents.forEach(c => c.classList.toggle('active', c.id === id));
+    });
+  });
+
+  const cars = {
+    sedan: [
+      { src: "/cars/sedan1.jpg", alt: "Седан 1" },
+      {
+        src: "/cars/sedan2.jpg",
+        alt: "Седан 2",
+      },
+    ],
+    suv: [
+      {
+        src: "/cars/suv1.jpg",
+        alt: "SUV 1",
+      },
+      {
+        src: "/cars/suv2.jpg",
+        alt: "SUV 2",
+      },
+    ],
+    hatchback: [
+      {
+        src: "/cars/hatch1.jpg",
+        alt: "Хетчбек 1",
+      },
+      {
+        src: "/cars/hatch2.jpg",
+        alt: "Хетчбек 2",
+      },
+    ],
   };
 
-  gallery.innerHTML = '';
-  images[type].forEach((src) => {
-    const img = document.createElement('img');
-    img.src = src;
-    img.alt = type;
-    gallery.appendChild(img);
-  });
-}
+  function selectCarType(type) {
+    const gallery = document.getElementById('car-gallery');
+    gallery.innerHTML = '';
+    cars[type].forEach(car => {
+      const img = document.createElement('img');
+      img.src = car.src;
+      img.alt = car.alt;
+      gallery.appendChild(img);
+    });
+  }

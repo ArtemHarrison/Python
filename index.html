@@ -6,41 +6,85 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>DriveUA</title>
+    <title>DriveUA — Купівля та продаж авто в Україні</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="logo-left">
         <img
           src="https://media.discordapp.net/attachments/1378681218622816258/1380963572049379390/image.png?ex=686a0b4c&is=6868b9cc&hm=9394a07f6249c6fca28dd59ef4c8f58b74fc528bf060c5ee50609760c7972469&=&format=webp&quality=lossless&width=933&height=241"
-          alt="Logo"
+          alt="DriveUA logo"
           class="logo-img"
         />
       </div>
-      <h1 class="logo">DriveUA</h1>
-      <div class="nav-right">
-        <a href="index.html" class="tab-btn active" data-tab="home"
+      <h1 class="logo-text">DriveUA</h1>
+      <nav class="nav-right">
+        <a href="#home" class="tab-btn active" data-tab="home"
           >Головна</a
         >
-        <a href="index2.html" class="tab-btn" data-tab="select"
+        <a href="index2.html" class="tab-btn_2"
           >Каталог</a
         >
-      </div>
+      </nav>
     </header>
-    <div class="kuprod">
-      <button>Продати своє Авто</button>
-      <button>Купити підтримане Авто</button>
+    <section class="hero">
+      <h2>Надійний спосіб купити або продати авто</h2>
+      <p>
+        DriveUA допомагає тисячам українців знайти своє авто швидко,
+        вигідно та безпечно. Приєднуйся — і переконайся сам!
+      </p>
+      <a href="#select" class="cta-btn">Почати пошук</a>
+    </section>
+    <div class="kuprod" aria-label="Дії користувача">
+      <button>Продати своє авто</button>
+      <a href="#select" class="tab-btn" data-tab="select" >Купити підтримане авто</a>
     </div>
-
+    <section class="welcome-section">
+      <div class="text-left">
+        <h2>Як це працює?</h2>
+        <ol>
+          <li>
+            Створюєш безкоштовне оголошення менш ніж за 3 хвилини.
+          </li>
+          <li>Наші експерти перевіряють авто та документи.</li>
+          <li>Отримуєш гроші одразу після підтвердження угоди.</li>
+        </ol>
+      </div>
+      <div class="image-right">
+        <img
+          src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+          alt="Процес продажу авто"
+        />
+      </div>
+    </section>
+    <section class="benefits">
+      <h2>Чому обирають нас</h2>
+      <ul>
+        <li>Гарантія безпечної угоди</li>
+        <li>Понад 10 000 перевірених авто</li>
+        <li>Без комісії за документи</li>
+        <li>Служба підтримки 24/7</li>
+      </ul>
+    </section>
     <div id="home" class="tab-content active">
       <p>
-        Вітаємо на сайті DriveUA. У нас ви зможете безпечно купити та
-        продати авто всього в пару кліків.
+        Вітаємо на сайті <strong>DriveUA</strong>. У нас ви зможете
+        легко та безпечно купити або продати авто всього за кілька
+        кліків.
       </p>
       <ul>
-        <p>Продаж авто за 15 хвилин в межах Києва</p>
-        <p>Продаж підтриманих авто по Україні за низькими цінами</p>
+        <li>Продаж авто за 15 хвилин у межах Києва</li>
+        <li>
+          Широкий вибір підтриманих авто по Україні за вигідними
+          цінами
+        </li>
+        <li>Онлайн‑перевірка історії авто в один клік</li>
       </ul>
     </div>
 
@@ -51,33 +95,32 @@
         <button onclick="selectCarType('suv')">Позашляховик</button>
         <button onclick="selectCarType('hatchback')">Хетчбек</button>
       </div>
-      <div id="car-gallery" class="gallery"></div>
+      <div id="car-gallery" class="gallery" aria-live="polite"></div>
     </div>
 
-    <footer class="footer">
-      <div class="contact">+380 00 000 00 00<br />вул. Пушкіна 7</div>
+    <footer>
+      <div class="contact">
+        +380 00 000 00 00<br />вул. Пушкіна 7, Київ
+      </div>
       <div class="socials">
-        <a href="">
-          <img
+        <a href="#"
+          ><img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png"
             alt="Instagram"
-          />
-        </a>
-        <a href="">
-          <img
+        /></a>
+        <a href="#"
+          ><img
             src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png"
             alt="Facebook"
-          />
-        </a>
-        <a href="">
-          <img
+        /></a>
+        <a href="#"
+          ><img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/1200px-Tiktok_icon.svg.png"
             alt="TikTok"
-          />
-        </a>
+        /></a>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
