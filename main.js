@@ -5,9 +5,7 @@
     tab.addEventListener('click', e => {
       e.preventDefault();
       const id = tab.getAttribute('data-tab');
-      // Активна кнопка
       tabs.forEach(t => t.classList.toggle('active', t === tab));
-      // Активний контент
       contents.forEach(c => c.classList.toggle('active', c.id === id));
     });
   });

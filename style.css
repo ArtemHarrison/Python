@@ -12,7 +12,7 @@ ul {
   list-style: none;
 }
 
-/* ====== BASE ====== */
+
 :root {
   --dark: #000;
   --light: #fff;
@@ -27,7 +27,7 @@ body {
   line-height: 1.5;
 }
 
-/* ====== HEADER ====== */
+
 header {
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ header {
   color: var(--dark);
 }
 
-/* ====== HERO ====== */
+
 .hero {
   text-align: center;
   padding: 100px 20px 120px;
@@ -114,7 +114,6 @@ header {
   box-shadow: 0 0 15px 3px var(--light);
 }
 
-/* ====== WELCOME / HOW IT WORKS ====== */
 .welcome-section {
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +147,7 @@ header {
   box-shadow: var(--shadow);
 }
 
-/* ====== BENEFITS ====== */
+
 .benefits {
   background: #1e5048;
   padding: 60px 20px;
@@ -176,7 +175,7 @@ header {
   box-shadow: var(--shadow);
 }
 
-/* ====== MAIN CONTENT TABS ====== */
+
 .tab-content {
   display: none;
   padding: 40px 20px;
@@ -211,7 +210,7 @@ header {
   box-shadow: var(--shadow);
 }
 
-/* ====== CALL‑TO‑ACTION BAR ====== */
+
 .kuprod {
   display: flex;
   justify-content: center;
@@ -235,7 +234,7 @@ header {
   transform: translateY(-3px) scale(1.05);
 }
 
-/* ====== FOOTER ====== */
+
 footer {
   background: var(--dark);
   padding: 40px 20px 60px;
@@ -257,7 +256,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* ====== RESPONSIVE ====== */
+
 @media (max-width: 600px) {
   .hero h2 {
     font-size: 32px;
