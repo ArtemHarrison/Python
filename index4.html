@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriveUA — Продати авто</title>
+  <link rel="stylesheet" href="style4.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo-left">
+      <img src="logo.png" alt="Logo" class="logo-img" />
+    </div>
+    <h1 class="logo">DriveUA</h1>
+    <nav class="nav-right">
+      <a href="index.html" class="tab-btn">Головна</a>
+      <a href="index2.html" class="tab-btn">Каталог</a>
+      <a href="index4.html" class="tab-btn active">Продати авто</a>
+    </nav>
+  </header>
 
+  <main class="form-container">
+    <h2>Форма здачі авто на продаж</h2>
+    <form id="carForm">
+      <label>Марка<br><input id="brand" type="text" placeholder="Наприклад, Toyota" required></label>
+      <label>Тип<br>
+        <select id="type">
+          <option value="sedan">Седан</option>
+          <option value="suv">Позашляховик</option>
+          <option value="hatchback">Хетчбек</option>
+        </select>
+      </label>
+      <label>Рік<br><select id="year"></select></label>
+      <label>Пробіг, км<br><input id="km" type="number" min="0" placeholder="00000"></label>
+      <label>Контактний телефон<br><input id="phone" type="tel" placeholder="+380..." required></label>
+      <label>Вартість, $<br><input id="price" type="number" min="0" required></label>
+      <button type="submit">Виставити авто на продаж</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="contact">+380 00 000 00 00<br>Київ, вул. Пушкіна</div>
+  </footer>
+
+  <script src="main4.js"></script>
+</body>
+</html>
